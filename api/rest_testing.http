@@ -1,0 +1,12 @@
+GET http://localhost:8080/get-incident 
+
+
+# POST  http://localhost:8080/createincident  HTTP/1.1
+# content-type: application/json
+
+# {
+#     "type": "sample",
+#     "description": "Wed, 21 Oct 2015 18:27:50 GMT",
+#     "lat": 1,
+#     "lng": 2
+# }

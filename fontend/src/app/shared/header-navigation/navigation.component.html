@@ -1,0 +1,81 @@
+<!-- ============================================================== -->
+<!-- toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-left mr-auto">
+  <li class="nav-item d-none d-md-block d-lg-none">
+    <a
+      (click)="toggleSidebar.emit()"
+      class="nav-link sidebartoggler waves-effect waves-light"
+      href="javascript:void(0)"
+    >
+      <i class="mdi mdi-menu font-24"></i>
+    </a>
+  </li>
+  <!-- ============================================================== -->
+  <!-- Search -->
+  <!-- ============================================================== -->
+  <li class="nav-item search-box">
+    <!-- <a
+      (click)="showSearch = !showSearch"
+      class="nav-link waves-effect waves-dark"
+      href="javascript:void(0)"
+    >
+      <i class="ti-search"></i>
+    </a>
+    <form
+      class="app-search position-absolute"
+      [ngClass]="{ 'show-search': showSearch }"
+    >
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Search &amp; enter"
+      />
+      <a class="srh-btn" (click)="showSearch = !showSearch">
+        <i class="ti-close"></i>
+      </a>
+    </form>
+  </li> -->
+</ul>
+<!-- ============================================================== -->
+<!-- Right side toggle and nav items -->
+<!-- ============================================================== -->
+<ul class="navbar-nav float-right">
+  <li class="nav-item m-r-20">
+    <p></p>
+    <p></p>
+    <p><strong>Incidence Monitoring and Reporting</strong></p>
+  </li>
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+  <li class="nav-item dropdown" ngbDropdown placement="bottom-right">
+    <a
+      ngbDropdownToggle
+      class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic"
+      href="javascript:void(0)"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false"
+    >
+      <img
+        src="https://scontent.fpbh1-1.fna.fbcdn.net/v/t1.0-9/85227885_3250133835049656_9031902278834978816_o.jpg?_nc_cat=105&ccb=2&_nc_sid=09cbfe&_nc_ohc=ofMxG-aOGrMAX9f9l_b&_nc_ht=scontent.fpbh1-1.fna&oh=9dac3b0e23bafa516c04459f587a2908&oe=5FD35073"
+        alt="user"
+        class="rounded-circle"
+        width="31"
+      />
+    </a>
+    <div class="dropdown-menu user-dd" ngbDropdownMenu>
+      <a class="dropdown-item" href="javascript:void(0)">
+        <i class="ti-user m-r-5 m-l-5"></i> My Profile</a
+      >
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="javascript:void(0)">
+        <i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a
+      >
+    </div>
+  </li>
+  <!-- ============================================================== -->
+  <!-- User profile and search -->
+  <!-- ============================================================== -->
+</ul>
